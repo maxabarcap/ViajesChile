@@ -1,0 +1,34 @@
+body {
+    font-family: "Raleway";
+}
+
+section {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.white {
+    color: #fff;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.celeste {
+    background-color:darkturquoise;
+}
+
+#form-mensaje {
+    height: 12rem;
+}
+
+#enviarCorreo {
+    color: #fff;
+    background-color: darkturquoise;
+}
+
+#ftr {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
