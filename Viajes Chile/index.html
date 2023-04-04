@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet"> <!-- Fuente Raleway 300 y 500, desde Google Fonts-->
     <script src="https://kit.fontawesome.com/f8b641b776.js" crossorigin="anonymous"></script> <!-- Setup de Font Awesome version 6 -->
 </head>
-<body data-bs-spy="scroll">
+<body>
     <!-- Nav Bar -->
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg px-1 py-1">
         <div class="container-fluid col-4">
@@ -60,7 +60,7 @@
             </button>
         </div>
     </header>
-    <section class="d-none d-md-block" style="background-color: black;">
+    <section class="d-none d-md-block fondo">
         <h2 class="text-center p-5 white" id="QS">¿QUIÉNES SOMOS?</h2> <!-- Seccion Quienes Somos, mucho texto -->
         <div class="container-fluid row py-3">
             <div class="col-md-4">
@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section style="background-color: black;">
+    <section class="fondo">
         <h2 class="text-center p-5 white" id="D">DESTACADOS</h2> <!-- Seccion Destacados, conjunto de cards en una sola fila -->
         <div class="container-fluid row py-3">
             <div class="col-md-3">
@@ -124,7 +124,7 @@
             </div>
         </div>
     </section>
-    <section style="background-color: black;">
+    <section class="fondo">
         <h2 class="text-center p-5 white" id="C">CONTACTO</h2> <!-- Seccion Contacto, contiene forms -->
         <p class="white py-1">Nombre</p>
         <div class="py-1">
@@ -139,7 +139,7 @@
             <input type="mensaje" class="form-control" id="form-mensaje"> <!-- Form ligeramente más grande -->
         </div>
         <div class="py-3" id="pb">
-            <button role="button" class="btn btn-light py-1" id="enviarCorreo" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enviar un correo"> Enviar </button> <!-- Boton con tooltip -->
+            <button role="button" class="btn btn-light py-1" id="enviarCorreo" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enviar un correo"> Enviar </button> <!-- Boton con tooltip, elemento con js n2-->
         </div>
         <br>
     </section>
@@ -159,17 +159,15 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!-- Bootstrap y Popper bundle -->
-    <!-- <script  src="https://code.jquery.com/jquery-3.6.4.js"  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="  crossorigin="anonymous"></script>
-    -->
-        <script>
-            // $(document).ready(function(){
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-            });
-            var myCarousel = document.querySelector('#myCarousel')
-            var carousel = new bootstrap.Carousel(myCarousel)
-            // } );
+    <script  src="https://code.jquery.com/jquery-3.6.4.js"  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="  crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel)   
     </script>
 </body>
 </html>
