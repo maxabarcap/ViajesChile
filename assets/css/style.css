@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fuente escogida "Ralweway" */
+body {
+    font-family: "Raleway"; 
+}
+
+/* Padding en el eje Y para centrar las secciones según maqueta*/
+section {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+/* Color del texto de la pagina */
+.white {
+    color: #fff;
+}
+
+/* Regula la fuente en las secciones que lo necesitan (parrafos) */
+.light {
+    font-weight: 300;
+}
+
+/* Color de fondo, use el que encontré más parecido a la maqueta ya que no entregaron un código */
+.celeste {
+    background-color:#0DCAF0;
+}
+
+/* Ajusta altura de un form en particular */
+#form-mensaje {
+    height: 12rem;
+}
+
+/* Boton de enviar lo ingresado en los forms y su estilo */
+#enviarCorreo {
+    color: #fff;
+    background-color: #0DCAF0;
+}
+
+/* Padding del footer para alinearlo bien según maqueta */
+#ftr {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/* Aplicar bg-color negro a las secciones */
+.fondo {
+    background-color: black;
+}
